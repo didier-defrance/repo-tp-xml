@@ -9,5 +9,9 @@ public class Calculateur {
 	public double multiplication(double a, double b){
 		return a*b;
 	}
+	
+	public double soustraction(double a, double b){
+		return a-b;
+	}
 
 }

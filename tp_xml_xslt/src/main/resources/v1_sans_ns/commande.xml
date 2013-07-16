@@ -1,0 +1,22 @@
+<?xml-stylesheet type='text/xsl' href='commande.xslt' ?>
+<commande 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="commande.xsd"
+num="1">
+<client>
+   <nom>Defrance</nom>
+   <prenom>didier</prenom>
+   <adresse>12 rue elle par ici</adresse>
+</client>
+<produits>
+ <produit categorie="fourniture de bureau">
+   <ref>12</ref>   <label>cahier</label>   <prix>15.5</prix>
+ </produit>
+ <produit categorie="tout usage (ecole , ...)">
+   <ref>13</ref>   <label>colle</label>   <prix>1.5</prix>
+ </produit>
+ <produit categorie="boisson">
+   <ref>10</ref>   <label>vin</label>   <prix>8.5</prix>
+ </produit>
+</produits>
+</commande>

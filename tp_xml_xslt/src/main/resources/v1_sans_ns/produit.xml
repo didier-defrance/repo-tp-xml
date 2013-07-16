@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<produit 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="produit.xsd"
+categorie="livre">
+   <ref>12</ref>
+  <label>cahier</label>
+  <prix>5.5</prix>
+</produit>

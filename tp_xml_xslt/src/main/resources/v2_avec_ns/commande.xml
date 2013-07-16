@@ -1,0 +1,20 @@
+<!-- <?xml-stylesheet type='text/xsl' href='commande.xslt' ?>-->
+<c:commande xmlns:c="http://www.afcpef.fr/commande"
+            xmlns:p="http://www.afcpef.fr/produit" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.afcpef.fr/commande   commande.xsd"
+num="1">
+<c:client>
+   <c:nom>Defrance</c:nom>
+   <c:prenom>didier</c:prenom>
+   <c:adresse>12 rue elle par ici</c:adresse>
+</c:client>
+<c:produits>
+ <p:produit categorie="fourniture de bureau">
+   <p:ref>12</p:ref> <p:label>cahier</p:label> <p:prix>15.5</p:prix>
+ </p:produit>
+ <p:produit categorie="tout usage (ecole , ...)">
+   <p:ref>13</p:ref> <p:label>colle</p:label> <p:prix>1.5</p:prix>
+ </p:produit>
+ </c:produits>
+</c:commande>

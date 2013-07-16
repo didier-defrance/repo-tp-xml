@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<p:produit xmlns:p="http://www.afcpef.fr/produit"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.afcpef.fr/produit  produit.xsd"
+categorie="livre">
+   <p:ref>12</p:ref>
+   <p:label>cahier</p:label>
+   <p:prix>5.5</p:prix>
+</p:produit>

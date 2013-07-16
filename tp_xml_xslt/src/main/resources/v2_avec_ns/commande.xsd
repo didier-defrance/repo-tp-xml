@@ -1,0 +1,35 @@
+<xsd:schema 
+targetNamespace="http://www.afcpef.fr/commande"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:prod="http://www.afcpef.fr/produit"
+    xmlns:c="http://www.afcpef.fr/commande"
+  elementFormDefault="qualified"  attributeFormDefault="unqualified">
+	<xsd:annotation><xsd:documentation>...</xsd:documentation></xsd:annotation>
+	<xsd:import namespace="http://www.afcpef.fr/produit"
+	            schemaLocation="produit.xsd" />
+	<xsd:element name="commande" type="c:cmdeType" />
+	<xsd:complexType name="cmdeType">
+		<xsd:sequence>
+			<xsd:element name="client" type="c:clientType" />
+			<xsd:element name="produits" type="c:listeProdType" />
+		</xsd:sequence>
+		<xsd:attribute name="num" type="xsd:positiveInteger" />
+	</xsd:complexType>
+	
+	<xsd:complexType name="listeProdType">
+		<xsd:sequence>
+	 <!--  <xsd:element name="produit" type="prod:prodType" 
+	        maxOccurs="unbounded" />	-->
+			<xsd:element ref="prod:produit" maxOccurs="unbounded" />			
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="clientType">
+		<xsd:sequence>
+			<xsd:element name="nom" type="xsd:string" />
+			<xsd:element name="prenom" type="xsd:string" />
+			<xsd:element name="adresse" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

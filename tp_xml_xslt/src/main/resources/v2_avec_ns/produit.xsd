@@ -1,0 +1,26 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:prod="http://www.afcpef.fr/produit"
+   targetNamespace="http://www.afcpef.fr/produit"
+   elementFormDefault="qualified"
+   attributeFormDefault="unqualified">
+	<xsd:annotation>
+		<xsd:documentation>Schema pour produit</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="produit" type="prod:prodType" />
+	
+	<xsd:complexType name="prodType">
+		<xsd:sequence>
+			<xsd:element name="ref" type="xsd:positiveInteger" />
+			<xsd:element name="label" type="xsd:string" />
+			<xsd:element name="prix" type="prod:myPositiveDecimal" />
+		</xsd:sequence>
+		<xsd:attribute name="categorie" type="xsd:string" />
+	</xsd:complexType>
+	
+	<xsd:simpleType name="myPositiveDecimal">
+	<xsd:restriction base="xsd:decimal">
+		<xsd:minInclusive value="0"/>
+	</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

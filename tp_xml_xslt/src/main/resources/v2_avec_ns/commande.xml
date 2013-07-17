@@ -1,8 +1,8 @@
 <!-- <?xml-stylesheet type='text/xsl' href='commande.xslt' ?>-->
-<c:commande xmlns:c="http://www.afcpef.fr/commande"
-            xmlns:p="http://www.afcpef.fr/produit" 
+<c:commande xmlns:c="http://www.afcepf.fr/commande"
+            xmlns:p="http://www.afcepf.fr/produit" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.afcpef.fr/commande   commande.xsd"
+xsi:schemaLocation="http://www.afcepf.fr/commande   commande.xsd"
 num="1">
 <c:client>
    <c:nom>Defrance</c:nom>

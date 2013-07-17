@@ -1,11 +1,11 @@
 <xsd:schema 
-targetNamespace="http://www.afcpef.fr/commande"
+targetNamespace="http://www.afcepf.fr/commande"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:prod="http://www.afcpef.fr/produit"
-    xmlns:c="http://www.afcpef.fr/commande"
+    xmlns:prod="http://www.afcepf.fr/produit"
+    xmlns:c="http://www.afcepf.fr/commande"
   elementFormDefault="qualified"  attributeFormDefault="unqualified">
 	<xsd:annotation><xsd:documentation>...</xsd:documentation></xsd:annotation>
-	<xsd:import namespace="http://www.afcpef.fr/produit"
+	<xsd:import namespace="http://www.afcepf.fr/produit"
 	            schemaLocation="produit.xsd" />
 	<xsd:element name="commande" type="c:cmdeType" />
 	<xsd:complexType name="cmdeType">

@@ -27,7 +27,7 @@ public class TestDomAvecNs {
             docBuilderFactory.setValidating(true);//via dtd ou xsd
             docBuilderFactory.setAttribute(JAXP_SCHEMA_LANGUAGE,
                                 W3C_XML_SCHEMA);
-            String nsCmde = "http://www.afcpef.fr/commande";
+            String nsCmde = "http://www.afcepf.fr/commande";
             DocumentBuilder docBuilder =
                 docBuilderFactory.newDocumentBuilder();
             Document docXml= docBuilder.parse(in);

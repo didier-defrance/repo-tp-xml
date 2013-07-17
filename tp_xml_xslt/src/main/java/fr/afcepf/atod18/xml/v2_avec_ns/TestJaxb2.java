@@ -6,14 +6,14 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.Unmarshaller;
 
-import fr.afcpef.commande.CmdeType;
+import fr.afcepf.commande.CmdeType;
 
 public class TestJaxb2 {
 
     public static void main(String[] args) {
        try {
         JAXBContext jctx = 
-           JAXBContext.newInstance("fr.afcpef.commande");
+           JAXBContext.newInstance("fr.afcepf.commande");
         Unmarshaller um = jctx.createUnmarshaller();
         InputStream in =(InputStream)
         Thread.currentThread().getContextClassLoader()

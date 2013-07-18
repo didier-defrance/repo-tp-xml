@@ -11,7 +11,7 @@ num="1">
 </c:client>
 <c:produits>
  <p:produit categorie="fourniture de bureau">
-   <p:ref>12</p:ref> <p:label>cahier</p:label> <p:prix>15.5</p:prix>
+   <p:ref>12</p:ref> <p:label>cahier</p:label> <p:prix>15.5dddd</p:prix>
  </p:produit>
  <p:produit categorie="tout usage (ecole , ...)">
    <p:ref>13</p:ref> <p:label>colle</p:label> <p:prix>1.5</p:prix>

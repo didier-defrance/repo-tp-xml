@@ -4,7 +4,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="commande.xsd"
 num="1">
 <client>
-   <nom>Defrance</nom>
+   <nom>Dev fou</nom>
    <prenom>didier</prenom>
    <adresse>12 rue elle par ici</adresse>
 </client>

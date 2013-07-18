@@ -6,9 +6,9 @@
 	<xsd:annotation>
 		<xsd:documentation>Schema pour produit</xsd:documentation>
 	</xsd:annotation>
-	<xsd:element name="produit" type="prod:prodType" />
+	<xsd:element name="produit" type="prod:Produit" />
 	
-	<xsd:complexType name="prodType">
+	<xsd:complexType name="Produit">
 		<xsd:sequence>
 			<xsd:element name="ref" type="xsd:positiveInteger" />
 			<xsd:element name="label" type="xsd:string" />

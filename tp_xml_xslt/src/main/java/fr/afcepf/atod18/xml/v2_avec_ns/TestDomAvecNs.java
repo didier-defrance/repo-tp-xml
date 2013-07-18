@@ -7,6 +7,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.xml.sax.ErrorHandler;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
 
 public class TestDomAvecNs {
 
@@ -30,7 +33,34 @@ public class TestDomAvecNs {
             String nsCmde = "http://www.afcepf.fr/commande";
             DocumentBuilder docBuilder =
                 docBuilderFactory.newDocumentBuilder();
-            Document docXml= docBuilder.parse(in);
+            
+            docBuilder.setErrorHandler(new ErrorHandler(){
+
+            	@Override
+				public void error(SAXParseException ex) throws SAXException {
+					System.err.println("error:" + ex.getMessage());
+					throw ex;
+				}
+
+				@Override
+				public void fatalError(SAXParseException ex)
+						throws SAXException {
+					System.err.println("fatal error:" +ex.getMessage());
+					throw ex;
+				}
+
+				@Override
+				public void warning(SAXParseException ex) throws SAXException {
+					System.err.println("warning:" + ex.getMessage());
+					
+				}
+
+				
+            	
+            });
+           
+            //Document docXml= docBuilder.parse(in);
+            Document docXml= docBuilder.parse("src/main/resources/v2_avec_ns/commande.xml");
             Element balisePrincipale= 
                 docXml.getDocumentElement();
             System.out.println(balisePrincipale.getNodeName());
